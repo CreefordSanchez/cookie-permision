@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #141414;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section {
+  background-image: url(../img/city.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+.cookie-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cookie-box {
+  background-color: #1e1e1e;
+  width: 300px;
+  height: 334.33px;
+  padding: 30px;
+}
+
+.cookie-descirption {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.cookie-btn-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.accept {
+  background-color: #3b3bff;
+  border: none;
+  width: 70px;
+  height: 37px;
+  color: #fff;
+}
+
+.settings {
+  background-color: #1e1e1e;
+  border: 1px #3b3bff solid;
+  color: #3b3bff;
+  width: 70px;
+  height: 37px;
+}
+
+.box {
+  width: 10px;
+  height: 100%;
+}
+
+.settings {
+  display: none;
+  display: inline;
+}
+
+.cookie-settings {
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.option-list {
+  align-self: center;
+  display: grid;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.slider {
+  width: 50px;
+  height: 25px;
+  background-color: #141414;
+  border-radius: 25px;
+  position: relative;
+}
+
+.circle {
+  height: 100%;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  transition: right 0.5s ease-in-out;
+}
+
+.to-right {
+  right: 0;
+}
+
+.save-btn-container {
+  align-self: end;
+}
+
+.save-setting {
+  background-color: #3b3bff;
+  border: none;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  color: #fff;
+}
